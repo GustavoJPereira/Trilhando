@@ -1,0 +1,404 @@
+/* RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CABEÇALHO */
+
+.cabeçalho {
+    padding: 40px;
+    background-color: #fff;
+
+    margin-left: 17%;
+}
+
+.cabeçalho h2 {
+    color: #000;
+    font-size: 2em;
+    margin-left: 60px;
+    display: inline;
+    margin-top: 15px;
+}
+
+/* ICONES DO CABEÇALHO*/
+
+.cabeçalho nav {
+    float: right;
+    display: inline;
+    margin-right: 2%;
+    margin-top: 7px;
+}
+
+.cabeçalho i:hover {
+    color: #B144F0;
+}
+
+.cabeçalho i {
+    color: #111111;
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+.cabeçalho button {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* MODAL-COMPARTILHAMENTO */
+
+/* PRINCIPAL */
+
+.principal {
+    float: right;
+    width: 83%;
+    text-align: justify;
+    background-color: #E9EAFF;
+}
+
+.principal article {
+    padding: 30px 5% 30px 100px;
+}
+
+.principal h2 {
+    color: black;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.articulacao-alternada {
+    background-color: #fff;
+}
+
+.citacao {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    margin-bottom: -10px;
+}
+
+/* ABRE ASPAS */
+.fa-quote-left {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+.citacao h3 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-style: italic;
+}
+
+.fa-quote-right {
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+}
+
+/* FECHA ASPAS */
+
+.citacao h4 {
+    text-align: right;
+    margin-right: 15%;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BARRA LATERAL */
+
+.barra-lateral {
+    width: 17%;
+    height: 90%;
+    min-width: 250px;
+    background-color: #111;
+    float: left;
+    padding: 40px 30px 0px 30px;
+    position: fixed;
+    display: block;
+    top: 0px;
+}
+
+.barra-lateral h1 {
+    color: #fff;
+    float: left;
+    margin-left: 15px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: 'Comfortaa', cursive;
+    /* Abaixo, o código está setando o background e dizendo que ele está no texto*/
+    background: -webkit-gradient(left, #613DE0 0%, #B144F0 100%);
+    background: linear-gradient(to right, #613DE0 0%, #B144F0 100%);
+    -webkit-background-clip: text;
+}
+
+.fa-compact-disc {
+    color: #fff;
+    float: left;
+    font-size: 2em;
+    margin-top: 2px;
+    /* Abaixo, o código está setando o background e dizendo que ele está no texto*/
+    background: -webkit-gradient(left, #613DE0 0%, #B144F0 100%);
+    background: linear-gradient(to right, #613DE0 0%, #B144F0 100%);
+    -webkit-background-clip: text;
+}
+
+/* Efeito de passar o mouse em cima do logo */
+.barra-lateral .logo:hover {
+    /* Esse  comando faz com que o texto fique transparente, mostrando o background*/
+    -webkit-text-fill-color: transparent;
+}
+
+.barra-lateral li {
+    color: #fff;
+}
+
+/* LINKS DA BARRA LATERAL  */
+
+.marcadores {
+    margin: 90px 0 50px 50px;
+}
+
+.marcadores a {
+    color: #E9EAFF;
+}
+
+.marcadores li {
+    margin-top: 5px;
+}
+
+/* AUTOR NA BARRA LATERAL*/
+
+.autor {
+    width: 17%;
+    height: 10%;
+    min-height: 70px;
+    min-width: 250px;
+    background-color: #613DE0;
+    float: left;
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.autor div {
+    margin-left: 7%;
+    float: left;
+}
+
+.autor h2 {
+    color: #fff;
+    float: left;
+    font-size: 1.5em;
+    margin-top: 7px;
+}
+
+.autor img {
+    width: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px #613DE0;
+    transition: 0.5s;
+}
+
+
+.autor img:hover {
+    box-shadow: 0 0 0 3px #BEA6FF;
+}
+
+.autor img:active {
+    transition: 0s;
+    box-shadow: 0 0 0 3px #E9EAFF;
+}
+
+.autor p {
+    float: left;
+    font-size: 0.7em;
+    color: #E9EAFF;
+}
+
+.botao-autor {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    /* CABEÇALHO */
+
+    .cabeçalho {
+        padding: 40px;
+        background-color: #fff;
+        width: 100%;
+        margin-left: 0;
+        float: left;
+    }
+
+    .cabeçalho h2 {
+        color: #000;
+        font-size: 2em;
+        margin: auto;
+        display: inline;
+        margin-top: 15px;
+    }
+
+    /* ICONES DO CABEÇALHO*/
+
+    .cabeçalho nav {
+        float: right;
+        display: inline;
+        margin-right: 2%;
+        margin-top: 7px;
+    }
+
+
+    /* MODAL-COMPARTILHAMENTO */
+
+    /* PRINCIPAL */
+
+    .principal {
+        float: right;
+        width: 100%;
+        text-align: justify;
+        background-color: #E9EAFF;
+    }
+
+    .principal article {
+        padding: 30px 5% 30px 5%;
+    }
+
+    .citacao {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 50px;
+        padding-top: 40px;
+        margin-bottom: -10px;
+    }
+
+    /* BARRA LATERAL */
+
+    .barra-lateral {
+        width: 17%;
+        height: 90%;
+        min-width: 250px;
+        background-color: #111;
+        float: left;
+        padding: 40px 30px 0px 30px;
+        position: fixed;
+        display: none;
+        top: 0px;
+    }
+
+    /* AUTOR NA BARRA LATERAL*/
+
+    .autor {
+        width: 17%;
+        height: 10%;
+        min-height: 70px;
+        min-width: 250px;
+        background-color: #613DE0;
+        float: left;
+        position: fixed;
+        display: block;
+        bottom: 0px;
+        display: none;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    /* CABEÇALHO */
+
+    .cabeçalho {
+        padding: 20px;
+        background-color: #fff;
+        width: 100%;
+        
+    }
+
+    .cabeçalho h2 {
+        color: #000;
+        font-size: 1.9em;
+        margin:auto;
+        display: block;
+        margin-top: 15px;
+    }
+
+    /* ICONES DO CABEÇALHO*/
+
+    .cabeçalho nav {
+        float: left;
+        display: block;
+        margin-top: 0;
+        margin: auto;
+    }
+
+    .cabeçalho i:hover {
+        color: #B144F0;
+    }
+
+    .cabeçalho i {
+        color: #111111;
+        margin-left: 15px;
+        font-size: 2em;
+    }
+
+    .cabeçalho button {
+        background: transparent;
+        cursor: pointer;
+    }
+
+    /* MODAL-COMPARTILHAMENTO */
+
+    /* PRINCIPAL */
+
+    .principal h2 {
+        color: black;
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .principal p {
+        font-size: 1em;
+    }
+}
